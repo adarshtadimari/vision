@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <iostream>
+#include <cv.h>
+#include <highgui.h>
+#include <cxcore.h>
+#include "opencv2/highgui/highgui.hpp"
+#include "opencv2/imgproc/imgproc.hpp"
+
+#include <iostream>
+#include"rlyt3.cpp"
+
+using namespace cv;
+using namespace std;
+
+#define videofile "/home/vignesh/Videos/temp/video_kin.avi"
+#define rgbfile "/home/vignesh/Videos/temp/video.avi"
+
+#define videotimefile "/home/vignesh/Videos/run2/videotime.txt"
+#define gpstimefile "/home/vignesh/Videos/run2/gpstime.txt"
+#define csvfile "data3.csv"
+
+#define pantofile "t2.jpg"
+#define pwidth 640
+#define pheight 144
+#define stzoom 1.00
+#define ezoom 1.50
+#define sti 0
+#define ei 450
+float plx= 99.0;
+float ply= 26.0;
+float prx= 500.0;
+float pry= 22.0;
+
+#define actualw 100
+
+#define mode 0
+
+#define frameoffset 25*1
+
+int main(int argc, char* argv[])
+{
+
+    IplImage* pantotemplate=cvLoadImage("t2.jpg");
+    IplImage* frame=cvLoadImage(argv[1]);
+    IplImage* gen=fn(pantotemplate, frame, plx,ply,prx,pry);
+    cvShowImage("gen",gen);
+    cvWaitKey(0); 
+}

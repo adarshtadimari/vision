@@ -1,0 +1,5 @@
+#!/bin/bash
+
+./rly2 $1
+./a.out min.jpg $1
+./col $1

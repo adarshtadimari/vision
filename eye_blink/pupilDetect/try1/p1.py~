@@ -1,0 +1,10 @@
+import SimpleCV
+
+src= Image('s1.jpg',0)
+
+src=src.grayscale()
+xder=src.sobel(xorder=1,yorder=0)
+yder=src.sobel(xorder=0,yorder=1)
+
+
+

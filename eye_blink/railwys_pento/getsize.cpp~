@@ -1,0 +1,10 @@
+#include"cv.h"
+#include"highgui.h"
+
+int main()
+{
+    IplImage* least=cvLoadImage("least.jpg");
+    cout<<least->height;
+    
+
+}

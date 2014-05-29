@@ -1,0 +1,12 @@
+#!/bin/bash
+./a.out panto1/m10.jpg
+./a.out panto1/m1.jpg
+./a.out panto1/m2.jpg
+./a.out panto1/m3.jpg
+./a.out panto1/m4.jpg
+./a.out panto1/m5.jpg
+./a.out panto1/m6.jpg
+./a.out panto1/m7.jpg
+./a.out panto1/m8.jpg
+./a.out panto1/m9.jpg
+./a.out panto1/m:.jpg
